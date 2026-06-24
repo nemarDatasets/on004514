@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Simultaneous EEG and fNIRS recordings for semantic decoding of imagined animals and tools",
+  "description": "This dataset comprises simultaneous EEG and fNIRS recordings from 12 participants performing semantic imagery tasks involving silent naming and sensory-based imagination of animals and tools. Participants engaged in visual, auditory, and tactile imagery modalities while 64-channel EEG (2048 Hz sampling rate) and continuous-wave fNIRS data were acquired using integrated EEG-fNIRS montages. The dataset supports research in semantic brain-computer interfaces and multimodal neuroimaging analysis.",
+  "methods_description": "EEG data were acquired using a BioSemi ActiveTwo system with 64 electrodes positioned according to the 10-20 system, plus bilateral earlobe reference electrodes, galvanic skin response measurement, and respiration monitoring at 2048 Hz sampling rate. fNIRS data were collected using a NIRx NIRScoutXP continuous wave system with 8 light sources and 4 detectors in integrated fNIRS-EEG caps using frontal and temporal montages.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,12 +11,30 @@
     "Riccardo Poli": {},
     "Ian Daly": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004514.v1.1.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "fNIRS"
+    },
+    {
+      "term": "semantic decoding"
+    },
+    {
+      "term": "brain-computer interfaces"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "mental imagery"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on004514",
       "identifier_type": "URL",
@@ -34,16 +54,21 @@
       "identifier": "10.1088/1741-2552/ac0bfa",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004514.v1.1.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg",
     "nirs"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "25.9 GB (63 files)"
   ],
   "formats": [
     ".bdf",
@@ -52,62 +77,8 @@
     ".png",
     ".py",
     ".snirf",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This dataset comprises simultaneous EEG and fNIRS recordings from 12 participants performing semantic imagery tasks involving silent naming and sensory-based imagination of animals and tools using visual, auditory, and tactile modalities. EEG data were acquired using a 64-channel BioSemi system at 2048 Hz, while fNIRS data were collected with a NIRx NIRScoutXP system using frontal and temporal montages. The dataset supports research in semantic brain-computer interfaces and multimodal neuroimaging analysis.",
-  "methods_description": "EEG was acquired using a BioSemi ActiveTwo system with 64 electrodes positioned according to the 10-20 system, plus bilateral earlobe reference electrodes, galvanic skin response measurement, and respiration monitoring at 2048 Hz sampling rate. fNIRS data were collected simultaneously using a NIRx NIRScoutXP continuous wave imaging system with 8 light sources and 4 detectors in integrated fNIRS-EEG optode caps with frontal and temporal montages.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "fNIRS"
-    },
-    {
-      "term": "semantic decoding"
-    },
-    {
-      "term": "brain-computer interfaces"
-    },
-    {
-      "term": "semantic imagery"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "mental imagery"
-    },
-    {
-      "term": "visual imagery"
-    },
-    {
-      "term": "auditory imagery"
-    },
-    {
-      "term": "tactile imagery"
-    },
-    {
-      "term": "silent naming"
-    },
-    {
-      "term": "animals"
-    },
-    {
-      "term": "tools"
-    },
-    {
-      "term": "BioSemi"
-    },
-    {
-      "term": "NIRx"
-    },
-    {
-      "term": "continuous wave fNIRS"
-    },
-    {
-      "term": "optode montage"
-    }
-  ],
-  "source_hash": "fe8cbb37d85aa9d074fe246930bd58c8dd34bad23c4d9d65da47745dc7c347e7"
+  "source_hash": "724ac7ec0a1fb16d9f6a0a2179a0fe3b474d777fa25913833ab16f0170a14705"
 }
