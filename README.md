@@ -1,4 +1,6 @@
-﻿### Description
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004514-blue)](https://doi.org/10.82901/nemar.on004514)
+
+### Description
 This dataset contains simultaneous electroencephalography (EEG) and near-infrared spectroscopy (fNIRS) signals recorded from 12 participants while performing a silent naming task and three sensory-based imagery tasks using visual, auditory, and tactile perception.
 Participants were asked to visualize an object in their minds, imagine the sounds made by the object, and imagine the feeling of touching the object.
 
