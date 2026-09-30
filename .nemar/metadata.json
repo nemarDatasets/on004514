@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Simultaneous EEG and fNIRS recordings for semantic decoding of imagined animals and tools",
-  "description": "This dataset comprises simultaneous EEG and fNIRS recordings from 12 participants performing semantic imagery tasks involving silent naming and sensory-based imagination of animals and tools. Participants engaged in visual, auditory, and tactile perception tasks while neural activity was captured using a 64-channel BioSemi EEG system and a NIRx fNIRS imaging system with integrated optodes. The multimodal neuroimaging data supports research in semantic decoding and brain-computer interface applications.",
-  "methods_description": "EEG data were acquired using a BioSemi ActiveTwo system with 64 electrodes positioned according to the 10-20 system at 2048 Hz sampling rate, supplemented with earlobe reference electrodes, galvanic skin response measurement, and respiration monitoring. fNIRS data were collected simultaneously using a NIRx NIRScoutXP continuous wave imaging system with 8 light sources and 4 detectors in integrated fNIRS-EEG montages (frontal and temporal configurations).",
+  "description": "This dataset provides simultaneous EEG and fNIRS recordings from 12 participants performing a silent naming task and three sensory-based imagery tasks (visual, auditory, tactile) on objects from the semantic categories of animals and tools. It supports research on semantic decoding and brain-computer interfacing. Stimulus images and example Python scripts for loading the data with MNE and MNE-BIDS are included.",
+  "methods_description": "EEG was recorded with a BioSemi ActiveTwo system (64 electrodes, 10-20 system, earlobe references, GSR and respiration channels) at 2048 Hz. fNIRS was recorded with a NIRx NIRScoutXP continuous-wave system (8 sources, 4 detectors) using frontal and temporal montages, with EEG electrodes and optodes placed in an integrated NIRx cap.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,16 +22,20 @@
       "term": "semantic decoding"
     },
     {
-      "term": "brain-computer interfaces"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    },
-    {
       "term": "mental imagery"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Spectroscopy, Near-Infrared",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D019265"
     }
   ],
   "related_identifiers": [
@@ -41,24 +45,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004514",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1038/s41598-024-78992-1",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1088/1741-2552/ac0bfa",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds004514.v1.1.2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004514",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
@@ -68,7 +62,7 @@
     "nirs"
   ],
   "sizes": [
-    "25.9 GB (63 files)"
+    "24.15 GB (63 files)"
   ],
   "formats": [
     ".bdf",
